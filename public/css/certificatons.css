@@ -1,0 +1,95 @@
+.bg {
+    background: url(https://gaqm.org/assets/img/banner/banner4.jpg);
+}
+section {
+    padding: 20px 0 50px;
+    .holder {
+        margin-top: 50px;
+        display: flex;
+        gap: 5%;
+        h3 {
+            color: #565656;
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+        nav {
+            width: 25%;
+            h3 {
+                font-size: 20px;
+            }
+            ul {
+                li { 
+                    color: #565656;
+                    font-size: 16px;
+                    font-weight: 500;
+                    padding: 10px;
+                    border-bottom: 1px solid #ddd;
+                    border-left: 3px solid #ddd;
+                    border-right: 1px solid #eee;
+                    transition: .3s;
+                    &:hover,
+                    &.active {
+                        background-color: #eee;
+                        border-left: 3px solid var(--main-color);
+                        a {
+                            
+                            color: var(--main-color);
+                        }
+                    }
+                }
+            }
+        }
+        .holder-boxes {
+            width: 70%;
+            h3 {
+                font-size: 25px;
+            }
+            .boxes {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 30px;
+                .box {
+                    width: calc(100% / 3 - 30px);
+                    padding: 10px;
+                    border: 1px solid #ddd;
+                    transition: .3s;
+                    &:hover {
+                        box-shadow: 0 0 10px rgba(0, 0, 0
+                        , 0.1);
+                        border-color: var(--main-color);
+                        h4 {
+                            border-color: var(--main-color);
+                        }
+                    }
+                    h4 {
+                        color: #565656;
+                        font-size: 18px;
+                        font-weight: 500;
+                        margin-bottom: 10px;
+                        border-bottom: 1px solid #ddd;
+                        padding-bottom:5px ;
+                        transition: 0.3s;
+                    }
+                    p {
+                        font-size: 14px;
+                        color: #565656;
+                    }
+                    .d-flex {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: end;
+                        margin-top: 30px;
+                        width: 100%;
+                        img {
+                            max-width: 50%;
+                        }
+                        a {
+                            font-size: 28px;
+                            color: var(--main-color);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
